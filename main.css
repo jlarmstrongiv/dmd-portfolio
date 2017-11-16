@@ -24,7 +24,8 @@ body {
 
 .wrapper {
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 20px; }
 
 h1 {
   font-family: "Woodford Bourne", sans-serif;
@@ -63,5 +64,18 @@ a {
 .prototypes__link--inverse {
   color: #4C5994;
   margin-left: 20px; }
+
+@media (max-width: 430px) {
+  .prototypes {
+    text-align: center; }
+
+  .prototypes__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 170px; }
+
+  .prototypes__link--inverse {
+    color: #4C5994;
+    margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */

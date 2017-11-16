@@ -48,6 +48,7 @@ body {
 .wrapper {
   max-width: 500px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 // Default Styles
@@ -90,4 +91,19 @@ a {
 .prototypes__link--inverse {
   color: $kashmir-blue;
   margin-left: 20px;
+}
+// normally use min-width and code mobile first
+@media (max-width: 430px) {
+  .prototypes {
+    text-align: center;
+  }
+  .prototypes__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 170px;
+  }
+  .prototypes__link--inverse {
+    color: $kashmir-blue;
+    margin-left: 0;
+  }
 }
