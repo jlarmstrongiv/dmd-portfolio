@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/node,macos,linux,windows
+# Created by https://www.gitignore.io/api/node,macos,linux,windows,sass
 
 ### Linux ###
 *~
@@ -104,6 +104,10 @@ typings/
 .env
 
 
+### Sass ###
+.sass-cache/
+*.css.map
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -125,4 +129,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/node,macos,linux,windows
+# End of https://www.gitignore.io/api/node,macos,linux,windows,sass
