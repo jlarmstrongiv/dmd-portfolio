@@ -1,3 +1,93 @@
+// Todo:  Use Gulp with px => rem post-processor
+
+// Fonts
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('fonts/Woodford Bourne/Web/Woodford Bourne Regular-Webfont/Webfonts/woodfordbourne_regular_macroman/woodfordbourne-regular-webfont.eot');
+  src: url('fonts/Woodford Bourne/Web/Woodford Bourne Regular-Webfont/Webfonts/woodfordbourne_regular_macroman/woodfordbourne-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Regular-Webfont/Webfonts/woodfordbourne_regular_macroman/woodfordbourne-regular-webfont.woff2') format('woff2'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Regular-Webfont/Webfonts/woodfordbourne_regular_macroman/woodfordbourne-regular-webfont.woff') format('woff'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Regular-Webfont/Webfonts/woodfordbourne_regular_macroman/woodfordbourne-regular-webfont.ttf') format('truetype'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Regular-Webfont/Webfonts/woodfordbourne_regular_macroman/woodfordbourne-regular-webfont.svg#woodford_bourneregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Woodford Bourne';
+  src: url('fonts/Woodford Bourne/Web/Woodford Bourne Bold-Webfont/Webfonts/woodfordbourne_bold_macroman/woodfordbourne-bold-webfont.eot');
+  src: url('fonts/Woodford Bourne/Web/Woodford Bourne Bold-Webfont/Webfonts/woodfordbourne_bold_macroman/woodfordbourne-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Bold-Webfont/Webfonts/woodfordbourne_bold_macroman/woodfordbourne-bold-webfont.woff2') format('woff2'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Bold-Webfont/Webfonts/woodfordbourne_bold_macroman/woodfordbourne-bold-webfont.woff') format('woff'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Bold-Webfont/Webfonts/woodfordbourne_bold_macroman/woodfordbourne-bold-webfont.ttf') format('truetype'),
+       url('fonts/Woodford Bourne/Web/Woodford Bourne Bold-Webfont/Webfonts/woodfordbourne_bold_macroman/woodfordbourne-bold-webfont.svg#woodford_bournebold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$headings: "Woodford Bourne", sans-serif;
+$paragraphs: 'Open Sans', sans-serif;
+
+// Colors
+$athens-grey: #FCFCFD;
+$kashmir-blue: #4C5994;
+$spindle: #A3B9E5;
+
+// General
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: $athens-grey;
+  border: 20px solid $kashmir-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 320px;
+}
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+// Default Styles
 h1 {
-  color: navy;
+  font-family: $headings;
+  font-weight: bold;
+}
+p {
+  font-family: $paragraphs;
+}
+a {
+  color: black;
+}
+
+// Styles
+.greeting__hello {
+  padding: 0 0 15px 0;
+  font-size: 50px;
+}
+.greeting__intro {
+  line-height: 24px;
+}
+.prototypes__link {
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 2px solid $kashmir-blue;
+  font-family: $headings;
+  font-weight: normal;
+  display: inline-block;
+}
+.prototypes {
+  padding: 20px 0;
+}
+.prototypes__link--normal {
+  background-color: $kashmir-blue;
+  color: $athens-grey;
+}
+.prototypes__link--inverse {
+  color: $kashmir-blue;
+  margin-left: 20px;
 }
