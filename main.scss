@@ -94,6 +94,9 @@ a {
 }
 // normally use min-width and code mobile first
 @media (max-width: 430px) {
+  .greeting__hello {
+    text-align: center;
+  }
   .prototypes {
     text-align: center;
   }

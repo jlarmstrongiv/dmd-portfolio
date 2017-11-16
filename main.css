@@ -66,6 +66,9 @@ a {
   margin-left: 20px; }
 
 @media (max-width: 430px) {
+  .greeting__hello {
+    text-align: center; }
+
   .prototypes {
     text-align: center; }
 
